@@ -5,8 +5,8 @@ import HeaderSection from "@/components/core/header";
 import BookYourPodcast from "@/components/core/bookYourPodcast";
 
 export const metadata: Metadata = {
-  title: "Taaza Talks Podcast",
-  description: "India's Top Podcast For Founders",
+  title: "Taaza Talks",
+  description: "Frontend Template",
 };
 
 export default function RootLayout({
