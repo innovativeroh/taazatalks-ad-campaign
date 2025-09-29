@@ -1,4 +1,5 @@
 import { Mic } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
@@ -16,11 +17,13 @@ const HeroSection = () => {
           </div>
           <div className="w-full flex flex-col lg:flex-row gap-12 justify-start">
             <div className="flex-[1] w-full flex flex-col items-start justify-start">
-              <video
-                src="https://thefoundersdream.in/themes/front/video/TFD-Abhishek-Sir_Post.mp4"
-                className="w-full h-full object-cover rounded-xl mb-5"
-                controls
-              />
+            <Image
+              src={"/images/team.jpg"}
+              alt=""
+              width={1920}
+              height={1080}
+              className="w-full rounded-lg pb-10"
+            />
               <button className="bg-blue-700 flex flex-row items-center justify-center gap-5 text-lg md:text-2xl font-Montserrat font-bold w-[90%] mx-auto px-5 py-3 rounded-lg">
                 <Mic /> BOOK YOUR PODCAST <HiArrowNarrowRight />
               </button>

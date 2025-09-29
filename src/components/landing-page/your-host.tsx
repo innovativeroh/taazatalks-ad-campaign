@@ -13,13 +13,6 @@ const YourHost = () => {
             </h1>
           </div>
           <div className="w-full flex flex-col lg:flex-row items-start justify-start max-w-[1280px] mx-auto">
-            <div className="flex-[1.5] w-full flex-start">
-              <video
-                src="https://thefoundersdream.in/themes/front/video/abhishekvyas.mp4"
-                controls
-                className="w-full max-w-[700px] h-[400px] object-cover rounded-lg"
-              />
-            </div>
             <div className="flex-[1] w-full flex-center flex-col gap-5">
               <Image
                 src={

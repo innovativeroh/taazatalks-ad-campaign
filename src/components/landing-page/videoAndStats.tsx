@@ -1,7 +1,24 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 const VideoAndStatsSection = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((err) => {
+        console.log("Autoplay with sound failed. Waiting for user interaction.", err);
+      });
+    }
+  }, []);
+
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
   const socialReach = [
     {
       icons: "/icons/spotify.svg",
@@ -24,31 +41,46 @@ const VideoAndStatsSection = () => {
       description: "Marketing Collaboration (Months)",
     },
   ];
+
   return (
     <section className="mt-20">
       <main className="max-w-[1490px] mx-auto">
-        <div className="px-5 py-5 w-full flex-center flex-col gap-10">
-          <div className="w-full flex-center">
+        <div className="px-5 py-5 w-full flex flex-col items-center gap-10">
+          {/* Video Section */}
+          <div className="w-full flex justify-center">
             <video
-              src="https://thefoundersdream.in/themes/front/video/AD-2-V3.mp4"
-              className="rounded-xl"
+              ref={videoRef}
+              src="/videos/promo.mp4"
+              className="rounded-xl max-w-full cursor-pointer"
+              loop
               controls
+              autoPlay
+              muted
+              playsInline
+              onClick={handleVideoClick}
             ></video>
           </div>
+
+          {/* Stats Section */}
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-5 mt-7">
-            {socialReach.map((link, IDX) => (
-              <div className="w-full flex-center flex-col gap-5" key={IDX}>
+            {socialReach.map((link, idx) => (
+              <div
+                className="w-full flex flex-col items-center gap-5"
+                key={idx}
+              >
                 <Image
                   src={link.icons}
-                  alt=""
-                  width={1920}
-                  height={1080}
+                  alt={link.description}
+                  width={80}
+                  height={80}
                   className="w-auto h-20 invert"
                 />
                 <h1 className="text-5xl font-bold font-Montserrat">
                   {link.title}
                 </h1>
-                <p className="text-base font-bold text-[#F69604] font-Montserrat">{link.description}</p>
+                <p className="text-base font-bold text-[#F69604] font-Montserrat">
+                  {link.description}
+                </p>
               </div>
             ))}
           </div>
