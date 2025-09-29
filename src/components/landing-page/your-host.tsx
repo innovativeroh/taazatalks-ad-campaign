@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
@@ -29,9 +30,9 @@ const YourHost = () => {
                   Podcast Speaker, Event Organizer, and Mentor
                 </span>
               </h1>
-              <button className="bg-pink-600 text-lg md:text-2xl flex flex-row gap-2 items-center font-bold  mx-auto px-10 py-3 rounded-lg">
+              <Link target="_blank" href="https://wa.me/919509925137?text=Hello%2C%20I%E2%80%99m%20interested%20in%20participating%20in%20your%20podcast.%20Could%20you%20please%20share%20more%20details%20on%20how%20I%20can%20get%20involved%3F%20Thank%20you%21" className="bg-pink-600 text-lg md:text-2xl flex flex-row gap-2 items-center font-bold  mx-auto px-10 py-3 rounded-lg">
                 BOOK YOUR PODCAST <HiArrowNarrowRight />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

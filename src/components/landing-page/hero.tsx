@@ -1,5 +1,6 @@
 import { Mic } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
@@ -24,9 +25,10 @@ const HeroSection = () => {
               height={1080}
               className="w-full rounded-lg pb-10"
             />
-              <button className="bg-blue-700 flex flex-row items-center justify-center gap-5 text-lg md:text-2xl font-Montserrat font-bold w-[90%] mx-auto px-5 py-3 rounded-lg">
+              <Link target="_blank" href="https://wa.me/919509925137?text=Hello%2C%20I%E2%80%99m%20interested%20in%20participating%20in%20your%20podcast.%20Could%20you%20please%20share%20more%20details%20on%20how%20I%20can%20get%20involved%3F%20Thank%20you%21
+" className="bg-blue-700 flex flex-row items-center justify-center gap-5 text-lg md:text-2xl font-Montserrat font-bold w-[90%] mx-auto px-5 py-3 rounded-lg">
                 <Mic /> BOOK YOUR PODCAST <HiArrowNarrowRight />
-              </button>
+              </Link>
             </div>
             <div className="flex-[1] h-full w-full flex flex-col items-start justify-start gap-5 md:gap-10 font-Montserrat">
               <h1 className="text-lg md:text-xl lg:text-2xl font-bold">
