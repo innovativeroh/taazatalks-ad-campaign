@@ -1,10 +1,18 @@
+"use client";
 import { Mic } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { PopupButton } from "react-calendly";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 const HeroSection = () => {
+  const [root, setRoot] = useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setRoot(document.body);
+  }, []);
+
   return (
     <section>
       <main className="max-w-[1490px] mx-auto">
@@ -18,17 +26,33 @@ const HeroSection = () => {
           </div>
           <div className="w-full flex flex-col lg:flex-row gap-12 justify-start">
             <div className="flex-[1] w-full flex flex-col items-start justify-start">
-            <Image
-              src={"/images/team.jpg"}
-              alt=""
-              width={1920}
-              height={1080}
-              className="w-full rounded-lg pb-10"
-            />
-              <Link target="_blank" href="https://wa.me/919509925137?text=Hello%2C%20I%E2%80%99m%20interested%20in%20participating%20in%20your%20podcast.%20Could%20you%20please%20share%20more%20details%20on%20how%20I%20can%20get%20involved%3F%20Thank%20you%21
-" className="bg-blue-700 flex flex-row items-center justify-center gap-5 text-lg md:text-2xl font-Montserrat font-bold w-[90%] mx-auto px-5 py-3 rounded-lg">
+              <Image
+                src={"/images/team.jpg"}
+                alt=""
+                width={1920}
+                height={1080}
+                className="w-full rounded-lg pb-10"
+              />
+              {/* <Link
+                target="_blank"
+                href="https://wa.me/919509925137?text=Hello%2C%20I%E2%80%99m%20interested%20in%20participating%20in%20your%20podcast.%20Could%20you%20please%20share%20more%20details%20on%20how%20I%20can%20get%20involved%3F%20Thank%20you%21
+"
+                className="bg-blue-700 flex flex-row items-center justify-center gap-5 text-lg md:text-2xl font-Montserrat font-bold w-[90%] mx-auto px-5 py-3 rounded-lg"
+              >
                 <Mic /> BOOK YOUR PODCAST <HiArrowNarrowRight />
-              </Link>
+              </Link> */}
+              <div className="bg-blue-700 flex flex-row items-center justify-between gap-5 w-[90%] mx-auto px-5 py-3 rounded-lg relative">
+                <Mic />
+                {root && (
+                  <PopupButton
+                    url="https://calendly.com/thetechsolaceco"
+                    text="BOOK YOUR PODCAST"
+                    className="h-full absolute top-0 left-0 text-sm md:text-lg lg:text-2xl font-Montserrat font-bold w-full"
+                    rootElement={root}
+                  />
+                )}
+                <HiArrowNarrowRight />
+              </div>
             </div>
             <div className="flex-[1] h-full w-full flex flex-col items-start justify-start gap-5 md:gap-10 font-Montserrat">
               <h1 className="text-lg md:text-xl lg:text-2xl font-bold">

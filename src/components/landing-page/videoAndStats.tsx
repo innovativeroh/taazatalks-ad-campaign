@@ -22,7 +22,7 @@ const VideoAndStatsSection = () => {
   const socialReach = [
     {
       icons: "/icons/spotify.svg",
-      title: "10k",
+      title: "50k",
       description: "Spotify Listeners",
     },
     {
