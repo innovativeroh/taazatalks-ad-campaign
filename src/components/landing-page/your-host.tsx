@@ -1,17 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { PopupButton } from "react-calendly";
+import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 const YourHost = () => {
-  const [root, setRoot] = useState<HTMLElement | null>(null);
-
-  useEffect(() => {
-    setRoot(document.body);
-  }, []);
-
   return (
     <section className="mt-20">
       <main className="max-w-[1490px] mx-auto">
@@ -36,17 +29,13 @@ const YourHost = () => {
                   Podcast Speaker, Event Organizer, and Mentor
                 </span>
               </h1>
-              <div className="w-full max-w-[400px] bg-pink-600 text-lg md:text-2xl flex-end gap-2 font-bold mx-auto px-7 py-3 rounded-lg relative">
-                {root && (
-                  <PopupButton
-                    url="https://calendly.com/anchaltalks1985/30min"
-                    text="BOOK YOUR PODCAST"
-                    className="text-lg md:text-2xl font-bold absolute top-0 left-0 h-full w-full"
-                    rootElement={root}
-                  />
-                )}
-                <HiArrowNarrowRight />
-              </div>
+              <Link
+                target="_blank"
+                href="https://wa.me/919509925137?text=Hello%2C%20I%E2%80%99m%20interested%20in%20participating%20in%20your%20podcast.%20Could%20you%20please%20share%20more%20details%20on%20how%20I%20can%20get%20involved%3F%20Thank%20you%21"
+                className="bg-pink-600 text-lg md:text-2xl flex flex-row gap-2 items-center font-bold  mx-auto px-10 py-3 rounded-lg"
+              >
+                BOOK YOUR PODCAST <HiArrowNarrowRight />
+              </Link>
             </div>
           </div>
         </div>
