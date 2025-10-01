@@ -45,7 +45,7 @@ const HeroSection = () => {
                 <Mic />
                 {root && (
                   <PopupButton
-                    url="https://calendly.com/thetechsolaceco"
+                    url="https://calendly.com/anchaltalks1985/30min"
                     text="BOOK YOUR PODCAST"
                     className="h-full absolute top-0 left-0 text-sm md:text-lg lg:text-2xl font-Montserrat font-bold w-full"
                     rootElement={root}

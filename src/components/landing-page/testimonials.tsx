@@ -107,7 +107,7 @@ const TestimonialsSection = () => {
         <div className="px-5 py-5 w-full text-white flex-center flex-col gap-10 my-16">
           {root && (
             <PopupButton
-              url="https://calendly.com/thetechsolaceco"
+              url="https://calendly.com/anchaltalks1985/30min"
               text="LET'S TALK - BOOK YOUR PODCAST SESSION."
               className="bg-pink-600 text-lg md:text-2xl font-bold w-full md:w-fit mx-auto px-5 py-3 rounded-lg font-Montserrat"
               rootElement={root}

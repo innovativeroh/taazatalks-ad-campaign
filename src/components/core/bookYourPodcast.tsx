@@ -16,7 +16,7 @@ const BookYourPodcast = () => {
       <div className="px-5 py-7 w-full bg-pink-700 fixed bottom-0 left-0 flex-center gap-20">
         {root && (
           <PopupButton
-            url="https://calendly.com/thetechsolaceco"
+            url="https://calendly.com/anchaltalks1985/30min"
             text="BOOK YOUR PODCAST"
             className="h-full w-full absolute top-0 left-0 text-xl font-Montserrat font-semibold"
             rootElement={root}

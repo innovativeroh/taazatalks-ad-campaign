@@ -39,7 +39,7 @@ const YourHost = () => {
               <div className="w-full max-w-[400px] bg-pink-600 text-lg md:text-2xl flex-end gap-2 font-bold mx-auto px-7 py-3 rounded-lg relative">
                 {root && (
                   <PopupButton
-                    url="https://calendly.com/thetechsolaceco"
+                    url="https://calendly.com/anchaltalks1985/30min"
                     text="BOOK YOUR PODCAST"
                     className="text-lg md:text-2xl font-bold absolute top-0 left-0 h-full w-full"
                     rootElement={root}
