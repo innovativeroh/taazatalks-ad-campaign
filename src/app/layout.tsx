@@ -6,7 +6,7 @@ import BookYourPodcast from "@/components/core/bookYourPodcast";
 
 export const metadata: Metadata = {
   title: "Taaza Talks",
-  description: "Frontend Template",
+  description: "Business Tips That Work: Every episode gives simple, practical advice and ideas you can use to build and improve your own startup.",
 };
 
 export default function RootLayout({
