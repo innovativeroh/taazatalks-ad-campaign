@@ -74,34 +74,48 @@ const TestimonialsSection = () => {
             />
           </div>
         </div>
-        <div className="px-5 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-7">
+        <div className="px-5 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mt-7">
           <video
-            src="/images/1.mp4"
+            src="/videos/1.mp4"
             controls
             width={1920}
             height={1080}
-            className="w-full object-cover rounded-lg"
+            className="w-full h-full rounded-lg"
           />
           <video
-            src="/images/2.mp4"
+            src="/videos/2.mp4"
             controls
             width={1920}
             height={1080}
-            className="w-full object-cover rounded-lg"
+            className="w-full h-full rounded-lg"
           />
           <video
-            src="/images/3.mp4"
+            src="/videos/3.mp4"
             controls
             width={1920}
             height={1080}
-            className="w-full object-cover rounded-lg"
+            className="w-full h-full rounded-lg"
           />
           <video
-            src="/images/4.mp4"
+            src="/videos/4.mp4"
             controls
             width={1920}
             height={1080}
-            className="w-full object-cover rounded-lg"
+            className="w-full h-full rounded-lg"
+          />
+          <video
+            src="/videos/6.mp4"
+            controls
+            width={1920}
+            height={1080}
+            className="w-full h-full rounded-lg"
+          />
+          <video
+            src="/videos/7.mp4"
+            controls
+            width={1920}
+            height={1080}
+            className="w-full h-full rounded-lg"
           />
         </div>
         <div className="px-5 py-5 w-full text-white flex-center flex-col gap-10 my-16">
