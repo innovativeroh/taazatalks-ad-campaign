@@ -19,7 +19,7 @@ const faqData: FaqItemProps[] = [
   {
     question: "Who is the host of the podcast?",
     answer:
-      "The show is hosted by Aanchal Puri, a passionate storyteller who connects with diverse guests to share their knowledge, experiences, and wisdom.",
+      "The show is hosted by Aanchhal Puri, a passionate storyteller who connects with diverse guests to share their knowledge, experiences, and wisdom.",
   },
   {
     question: "What kind of topics are covered?",
