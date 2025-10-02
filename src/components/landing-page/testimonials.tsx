@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
               className="w-full rounded-lg"
             />
             <Image
-              src={"/images/22.png"}
+              src={"/images/22.jpg"}
               alt=""
               width={1920}
               height={1080}
