@@ -6,19 +6,19 @@ import React from "react";
 const ContentDeliverablesBreakdown = () => {
   const gridData = [
     {
-      title: "INSTAGRAM REELS (5–6 REELS)",
+      title: "INSTAGRAM REELS (1–2 REELS)",
       icon: "/icons/high-definition.svg",
     },
     {
-      title: "LINKEDIN POSTS (2 LONG FORMATS)",
-      icon: "/icons/linkedin-logo.svg",
+      title: "ARTICLE (1 LONG FORMATS)",
+      icon: "/icons/article-icon-free-vector.png",
     },
     {
       title: "EXCLUSIVE INSTAGRAM STORY",
       icon: "/icons/instagram-logo.svg",
     },
     {
-      title: "FACEBOOK POSTS (2 LONG-FORMATS)",
+      title: "FACEBOOK POSTS (1 LONG-FORMAT)",
       icon: "/icons/facebook-logo.svg",
     },
   ];
@@ -73,7 +73,7 @@ const ContentDeliverablesBreakdown = () => {
                     className="w-auto h-12"
                   />
                 </div>
-                <h1 className="text-lg font-Montserrat font-bold max-w-[200px] mt-2">
+                <h1 className="text-lg font-Montserrat font-bold max-w-[250px] mt-2">
                   {link.title}
                 </h1>
               </div>
