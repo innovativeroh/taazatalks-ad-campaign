@@ -4,7 +4,6 @@ import Link from "next/link";
 import React from "react";
 
 const TestimonialsSection = () => {
-
   return (
     <section className="mt-20">
       <main className="max-w-[1490px] mx-auto">
@@ -68,48 +67,41 @@ const TestimonialsSection = () => {
             />
           </div>
         </div>
-        <div className="px-5 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mt-7">
-          <video
-            src="/videos/1.mp4"
-            controls
-            width={1920}
-            height={1080}
-            className="w-full h-full rounded-lg"
-          />
+        <div className="px-5 w-full flex-between flex-wrap gap-10 mt-7">
           <video
             src="/videos/2.mp4"
             controls
             width={1920}
             height={1080}
-            className="w-full h-full rounded-lg"
+            className="w-[230px] h-[500px] rounded-lg"
           />
           <video
             src="/videos/3.mp4"
             controls
             width={1920}
             height={1080}
-            className="w-full h-full rounded-lg"
+            className="w-[230px] h-[500px] rounded-lg"
           />
           <video
             src="/videos/4.mp4"
             controls
             width={1920}
             height={1080}
-            className="w-full h-full rounded-lg"
+            className="w-[230px] h-[500px] rounded-lg"
           />
           <video
             src="/videos/6.mp4"
             controls
             width={1920}
             height={1080}
-            className="w-full h-full rounded-lg"
+            className="w-[230px] h-[500px] rounded-lg"
           />
           <video
             src="/videos/7.mp4"
             controls
             width={1920}
             height={1080}
-            className="w-full h-full rounded-lg"
+            className="w-[230px] h-[500px] rounded-lg"
           />
         </div>
         <div className="px-5 py-5 w-full text-white flex-center flex-col gap-10 my-16">
